@@ -6,4 +6,23 @@
     android:layout_height="match_parent"
     tools:context="com.example.cristian.proyecto_hci.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btnProcess"
+        android:text="Process"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:text="Description"
+        android:layout_above="@+id/btnProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </android.widget.RelativeLayout>
