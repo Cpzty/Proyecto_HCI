@@ -27,7 +27,7 @@ import java.util.stream.Stream;
 
 public class MainActivity extends AppCompatActivity {
 
-    private VisionServiceClient visionServiceClient = new VisionServiceRestClient("8d763d52e385402ca29c742cd41e1f20");
+    private VisionServiceClient visionServiceClient = new VisionServiceRestClient("99357d03d8f346f589f230e16fc5e0b5");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
