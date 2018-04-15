@@ -1,5 +1,6 @@
 package com.example.cristian.proyecto_hci;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -48,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
         btnProcess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AsyncTask<InputStream,String,String> recognizeTestTask = new AsyncTask<InputStream, String, String>() {
+                @SuppressLint("StaticFieldLeak") AsyncTask<InputStream,String,String> recognizeTestTask = new AsyncTask<InputStream, String, String>() {
                    ProgressDialog mDialog = new ProgressDialog(MainActivity.this);
                     @Override
-                    protected String doInBackground(InputStream... params) {
+                    protected  String doInBackground(InputStream... params) {
                         try {
 
                             publishProgress("Recognizing...");
